@@ -1,0 +1,6 @@
+framework module Pods_JLRoutesDemoUITests {
+  umbrella header "Pods-JLRoutesDemoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
