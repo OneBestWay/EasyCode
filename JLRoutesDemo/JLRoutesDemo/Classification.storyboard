@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DLc-cR-FM7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Classification Home View Controller-->
+        <scene sceneID="Uov-op-Kmv">
+            <objects>
+                <viewController storyboardIdentifier="ClassificationHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jPX-dd-V5E" customClass="ClassificationHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ks-eO-E1B"/>
+                        <viewControllerLayoutGuide type="bottom" id="De1-sU-uAv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k3L-fO-EWm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-ns-m3x">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMR-47-xdY">
+                                        <state key="normal" title="直播"/>
+                                        <connections>
+                                            <segue destination="hcs-qT-wxU" kind="show" id="V1K-2A-g1y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5a-wo-O9D">
+                                        <state key="normal" title="咨询"/>
+                                        <connections>
+                                            <segue destination="AgJ-iv-04I" kind="show" id="Swf-T4-3vQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uMR-47-xdY" firstAttribute="width" secondItem="j5a-wo-O9D" secondAttribute="width" id="755-Rc-nt3"/>
+                                    <constraint firstAttribute="height" constant="200" id="kVR-dF-McP"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogs-wO-HbS">
+                                <frame key="frameInset" minX="162" minY="442" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" 全球购"/>
+                                <connections>
+                                    <action selector="globalBuyButtonClicked:" destination="jPX-dd-V5E" eventType="touchUpInside" id="rg2-l2-qqb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSA-7Q-YZD">
+                                <frame key="frameInset" minX="162" minY="210" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="超市"/>
+                                <connections>
+                                    <action selector="superMarketButtonClicked:" destination="jPX-dd-V5E" eventType="touchUpInside" id="COL-Rb-YaB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p0S-ns-m3x" firstAttribute="leading" secondItem="k3L-fO-EWm" secondAttribute="leading" constant="15" id="5cw-Lv-kFH"/>
+                            <constraint firstItem="p0S-ns-m3x" firstAttribute="centerY" secondItem="k3L-fO-EWm" secondAttribute="centerY" id="NVI-bd-YPa"/>
+                            <constraint firstItem="p0S-ns-m3x" firstAttribute="centerX" secondItem="k3L-fO-EWm" secondAttribute="centerX" id="VF5-vm-tuV"/>
+                            <constraint firstAttribute="trailing" secondItem="p0S-ns-m3x" secondAttribute="trailing" constant="15" id="gG8-wz-BWC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CsG-xh-FQH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w72-Zx-Z5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2942" y="-197"/>
+        </scene>
+        <!--直播-->
+        <scene sceneID="eKN-We-9a4">
+            <objects>
+                <viewController storyboardIdentifier="LiveHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hcs-qT-wxU" customClass="LiveHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="flj-Z6-GNf"/>
+                        <viewControllerLayoutGuide type="bottom" id="wXm-Qz-Gcq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K55-Y7-Qvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fOP-Tc-Xl3">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fOP-Tc-Xl3" firstAttribute="top" secondItem="flj-Z6-GNf" secondAttribute="bottom" id="9JR-fV-WAG"/>
+                            <constraint firstItem="fOP-Tc-Xl3" firstAttribute="leading" secondItem="K55-Y7-Qvm" secondAttribute="leading" constant="10" id="eZU-ls-WsY"/>
+                            <constraint firstAttribute="trailing" secondItem="fOP-Tc-Xl3" secondAttribute="trailing" constant="10" id="fxt-ok-6Pp"/>
+                            <constraint firstItem="wXm-Qz-Gcq" firstAttribute="top" secondItem="fOP-Tc-Xl3" secondAttribute="bottom" id="sFd-QN-6zr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="直播" id="8ig-lD-Q0T"/>
+                    <connections>
+                        <outlet property="textView" destination="fOP-Tc-Xl3" id="kWy-vQ-crc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e85-Cy-cIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3729" y="-573"/>
+        </scene>
+        <!--咨询-->
+        <scene sceneID="S9P-eh-vB7">
+            <objects>
+                <viewController storyboardIdentifier="AdvisoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AgJ-iv-04I" customClass="AdvisoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FBn-cN-bTc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wug-c2-VgD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rdh-Hx-g6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V1X-fD-ehx">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V1X-fD-ehx" firstAttribute="leading" secondItem="Rdh-Hx-g6b" secondAttribute="leading" constant="10" id="Szd-sY-iZE"/>
+                            <constraint firstAttribute="trailing" secondItem="V1X-fD-ehx" secondAttribute="trailing" constant="10" id="ZVY-rV-YUv"/>
+                            <constraint firstItem="V1X-fD-ehx" firstAttribute="top" secondItem="FBn-cN-bTc" secondAttribute="bottom" id="lmT-26-tyc"/>
+                            <constraint firstItem="Wug-c2-VgD" firstAttribute="top" secondItem="V1X-fD-ehx" secondAttribute="bottom" id="mOF-Ck-1Eg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="咨询" id="wva-Xk-wwz"/>
+                    <connections>
+                        <outlet property="textView" destination="V1X-fD-ehx" id="WCW-RP-KhA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrV-d0-At1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3729" y="148"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="25o-eL-02Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DLc-cR-FM7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="分类" id="ho3-ch-5pv"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vSQ-au-GHC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jPX-dd-V5E" kind="relationship" relationship="rootViewController" id="1Qt-Zn-Zoe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Btl-G0-xzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2132" y="-197"/>
+        </scene>
+    </scenes>
+</document>
