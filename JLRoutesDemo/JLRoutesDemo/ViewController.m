@@ -14,16 +14,49 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+}
+- (IBAction)toFeatureRecommendClicked:(UIButton *)sender
+{
+    NSURL *viewUserURL = [NSURL URLWithString:@"JLRoutesDemo://home/supermarket?debug=true&foo=bar"];
+    [[UIApplication sharedApplication] openURL:viewUserURL options:@{} completionHandler:nil];
+
+}
+- (IBAction)toFeatureClicked:(UIButton *)sender
+{
+    NSURL *viewUserURL = [NSURL URLWithString:@"JLRoutesDemo://home/globalbuy?debug=true&foo=bar"];
+    [[UIApplication sharedApplication] openURL:viewUserURL options:@{} completionHandler:nil];
+
+}
+- (IBAction)bestPracticeClicked:(UIButton *)sender
+{
+    NSURL *viewUserURL = [NSURL URLWithString:@"JLRoutesDemo://product/user?debug=true&foo=bar"];
+    [[UIApplication sharedApplication] openURL:viewUserURL options:@{} completionHandler:nil];
+    
+}
+- (IBAction)customSchemeClicked:(UIButton *)sender
+{
+   
+    NSURL *viewUserURL = [NSURL URLWithString:@"Product://user?debug=true&foo=bar"];
+    [[UIApplication sharedApplication] openURL:viewUserURL options:@{} completionHandler:nil];
 }
 
+- (IBAction)toUserInfoButtonClicked:(UIButton *)sender {
+    
+    NSURL *viewUserURL = [NSURL URLWithString:@"JLRoutesDemo://user/view/10090?debug=true&foo=bar"];
+    [[UIApplication sharedApplication] openURL:viewUserURL options:@{} completionHandler:nil];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
+- (IBAction)notFoundCustomScheme:(UIButton *)sender
+{
+    NSURL *viewUserURL = [NSURL URLWithString:@"Product://user/view/10090?debug=true&foo=bar"];
+    [[UIApplication sharedApplication] openURL:viewUserURL options:@{} completionHandler:nil];
+    
+    [JLRoutes routesForScheme:@"Product"].shouldFallbackToGlobalRoutes = YES;
+}
 
 @end
