@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lqK-Oh-wwm">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lqK-Oh-wwm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -72,7 +72,7 @@
         <!--全球购-->
         <scene sceneID="PYW-aE-HYu">
             <objects>
-                <viewController storyboardIdentifier="GlobalBuyHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pHW-4i-0nP" customClass="GlobalBuyHomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GlobalBuyHomeViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pHW-4i-0nP" customClass="GlobalBuyHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sZG-yC-rPX"/>
                         <viewControllerLayoutGuide type="bottom" id="PiF-w3-wmE"/>
@@ -112,7 +112,7 @@
         <!--超市-->
         <scene sceneID="1Yv-hd-ce6">
             <objects>
-                <viewController storyboardIdentifier="SupermarketHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wbg-nl-cBb" customClass="SupermarketHomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SupermarketHomeViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wbg-nl-cBb" customClass="SupermarketHomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="foO-jF-qIB"/>
                         <viewControllerLayoutGuide type="bottom" id="x5x-jH-uuw"/>
@@ -152,7 +152,7 @@
         <!--首页-->
         <scene sceneID="1zZ-Wi-ITa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lqK-Oh-wwm" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lqK-Oh-wwm" customClass="HomeNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" id="BYe-LM-RJc"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

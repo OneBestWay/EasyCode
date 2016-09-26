@@ -22,6 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    self.window.backgroundColor = [UIColor whiteColor]; // TabbarVC->UInavigationVC->black shadow
     //注册各个模块的View Controller的URL
     [self homeApplication:application didFinishLaunchingWithOptions:launchOptions];
     [self classificationApplication:application didFinishLaunchingWithOptions:launchOptions];
