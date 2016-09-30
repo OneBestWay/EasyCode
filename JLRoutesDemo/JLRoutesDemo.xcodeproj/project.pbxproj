@@ -447,6 +447,7 @@
 				TargetAttributes = {
 					47F81D9E1D93FB4900A84902 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 65LXM77DMH;
 						ProvisioningStyle = Automatic;
 					};
 					47F81DB71D93FB4A00A84902 = {
@@ -814,6 +815,7 @@
 			baseConfigurationReference = D1674505F29C8EA7C6F7D638 /* Pods-JLRoutesDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 65LXM77DMH;
 				GCC_ENABLE_BUILTIN_FUNCTIONS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
@@ -829,6 +831,7 @@
 			baseConfigurationReference = 624E92F723932E250B30C21B /* Pods-JLRoutesDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 65LXM77DMH;
 				GCC_ENABLE_BUILTIN_FUNCTIONS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
