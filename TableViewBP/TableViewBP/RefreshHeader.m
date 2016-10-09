@@ -37,7 +37,7 @@ CGFloat const headerThresholdValue = 80;
 @implementation RefreshHeader
 
 
-- (instancetype)initScrollView:(UIScrollView*)scrollView {
+- (instancetype)initScrollView:(UIScrollView *)scrollView {
     self = [super init];
     if (self) {
         

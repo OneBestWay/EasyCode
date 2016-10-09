@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol ViewDataSourceDelegate <NSObject>
-- (void)selectedInTableView:(UITableView*)tableView atIndex:(NSIndexPath*)indexPath;
+- (void)selectedInTableView:(UITableView *)tableView atIndex:(NSIndexPath *)indexPath;
 @end
 
 @interface ViewDataSource : NSObject <UITableViewDelegate,UITableViewDataSource>

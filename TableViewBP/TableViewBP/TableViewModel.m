@@ -33,7 +33,9 @@
         }
         //在主线程更新UI
         dispatch_async(dispatch_get_main_queue(), ^{
-            callback(arr,YES);
+            if (callback) {
+                callback(arr,YES);
+            }
         });
     });
 }
@@ -56,7 +58,9 @@
         }
         //在主线程更新UI
         dispatch_async(dispatch_get_main_queue(), ^{
-            callback(arr,YES);
+            if (callback) {
+                callback(arr,YES);
+            }
         });
     });
 }

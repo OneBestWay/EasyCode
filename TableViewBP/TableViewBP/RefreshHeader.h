@@ -16,7 +16,7 @@ extern  CGFloat const headerThresholdValue;
 @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) HeaderViewBeginRefresh headerViewBeginRefresh;
 
-- (instancetype)initScrollView:(UIScrollView*)scrollView;
+- (instancetype)initScrollView:(UIScrollView *)scrollView;
 
 - (void)endRefreshing;
 - (void)beginRefreshing;

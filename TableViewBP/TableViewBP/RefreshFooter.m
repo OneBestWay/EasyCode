@@ -30,7 +30,7 @@ CGFloat const footerThresholdValue = 10;
 @end
 @implementation RefreshFooter
 
-- (instancetype)initScrollView:(UIScrollView*)scrollView {
+- (instancetype)initScrollView:(UIScrollView *)scrollView {
     self = [super init];
     if (self) {
         

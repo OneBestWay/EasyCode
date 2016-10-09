@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^Callback)(NSArray*,BOOL);
+typedef void(^Callback)(NSArray *,BOOL);
 
 @interface CustomModel : NSObject
 @property (nonatomic,strong) NSString *title;
