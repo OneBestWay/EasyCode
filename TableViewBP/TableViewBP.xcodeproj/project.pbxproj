@@ -24,6 +24,11 @@
 		4758D4CC1DA32EF900D3946C /* RefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4758D4CB1DA32EF900D3946C /* RefreshFooter.m */; };
 		4758D4CF1DA344B500D3946C /* RefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4758D4CE1DA344B500D3946C /* RefreshHeader.m */; };
 		4758D4D11DA344CB00D3946C /* RefreshHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4758D4D01DA344CB00D3946C /* RefreshHeader.xib */; };
+		47EC25601DA9DB42000731B5 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC255F1DA9DB42000731B5 /* HTTPClient.m */; };
+		47EC25661DAA5EC0000731B5 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC25651DAA5EC0000731B5 /* NSString+Additions.m */; };
+		47EC25691DAA5EFA000731B5 /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC25681DAA5EFA000731B5 /* NSData+Additions.m */; };
+		47EC256C1DAB2E88000731B5 /* NSArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC256B1DAB2E88000731B5 /* NSArray+Additions.m */; };
+		47EC256F1DAB30D1000731B5 /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 47EC256E1DAB30D1000731B5 /* NSDictionary+Additions.m */; };
 		539BAACD82A0EEF682026179 /* Pods_TableViewBPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F7F2C9ACFB5BB34DCEFE7B /* Pods_TableViewBPTests.framework */; };
 		ED8C7444D333E13E9DC054B8 /* Pods_TableViewBPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C924B2C041C04DB5F5710215 /* Pods_TableViewBPUITests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +83,16 @@
 		4758D4CE1DA344B500D3946C /* RefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshHeader.m; sourceTree = "<group>"; };
 		4758D4D01DA344CB00D3946C /* RefreshHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshHeader.xib; sourceTree = "<group>"; };
 		47A6183C1DA5E2820013A3EF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		47EC255E1DA9DB42000731B5 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPClient.h; path = HTTPClient/HTTPClient.h; sourceTree = "<group>"; };
+		47EC255F1DA9DB42000731B5 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPClient.m; path = HTTPClient/HTTPClient.m; sourceTree = "<group>"; };
+		47EC25641DAA5EC0000731B5 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Additions.h"; path = "HTTPClient/NSString+Additions.h"; sourceTree = "<group>"; };
+		47EC25651DAA5EC0000731B5 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Additions.m"; path = "HTTPClient/NSString+Additions.m"; sourceTree = "<group>"; };
+		47EC25671DAA5EFA000731B5 /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Additions.h"; path = "HTTPClient/NSData+Additions.h"; sourceTree = "<group>"; };
+		47EC25681DAA5EFA000731B5 /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Additions.m"; path = "HTTPClient/NSData+Additions.m"; sourceTree = "<group>"; };
+		47EC256A1DAB2E88000731B5 /* NSArray+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Additions.h"; path = "HTTPClient/NSArray+Additions.h"; sourceTree = "<group>"; };
+		47EC256B1DAB2E88000731B5 /* NSArray+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Additions.m"; path = "HTTPClient/NSArray+Additions.m"; sourceTree = "<group>"; };
+		47EC256D1DAB30D1000731B5 /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Additions.h"; path = "HTTPClient/NSDictionary+Additions.h"; sourceTree = "<group>"; };
+		47EC256E1DAB30D1000731B5 /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Additions.m"; path = "HTTPClient/NSDictionary+Additions.m"; sourceTree = "<group>"; };
 		62F7F2C9ACFB5BB34DCEFE7B /* Pods_TableViewBPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewBPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F3475208F7C96AE9BA4CED /* Pods-TableViewBPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewBPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewBPTests/Pods-TableViewBPTests.release.xcconfig"; sourceTree = "<group>"; };
 		927BDEA86A972203DCECD540 /* Pods-TableViewBP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewBP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewBP/Pods-TableViewBP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +236,16 @@
 		47A618381DA5E2030013A3EF /* HTTPClient */ = {
 			isa = PBXGroup;
 			children = (
+				47EC255E1DA9DB42000731B5 /* HTTPClient.h */,
+				47EC255F1DA9DB42000731B5 /* HTTPClient.m */,
+				47EC256A1DAB2E88000731B5 /* NSArray+Additions.h */,
+				47EC256B1DAB2E88000731B5 /* NSArray+Additions.m */,
+				47EC25641DAA5EC0000731B5 /* NSString+Additions.h */,
+				47EC25651DAA5EC0000731B5 /* NSString+Additions.m */,
+				47EC25671DAA5EFA000731B5 /* NSData+Additions.h */,
+				47EC25681DAA5EFA000731B5 /* NSData+Additions.m */,
+				47EC256D1DAB30D1000731B5 /* NSDictionary+Additions.h */,
+				47EC256E1DAB30D1000731B5 /* NSDictionary+Additions.m */,
 			);
 			name = HTTPClient;
 			sourceTree = "<group>";
@@ -520,12 +545,17 @@
 			files = (
 				4758D4861DA2073D00D3946C /* ViewController.m in Sources */,
 				4758D4BD1DA20FF100D3946C /* TableViewModel.m in Sources */,
+				47EC25601DA9DB42000731B5 /* HTTPClient.m in Sources */,
+				47EC25661DAA5EC0000731B5 /* NSString+Additions.m in Sources */,
+				47EC256C1DAB2E88000731B5 /* NSArray+Additions.m in Sources */,
 				4758D4831DA2073D00D3946C /* AppDelegate.m in Sources */,
 				4758D4BA1DA20E1100D3946C /* ViewDataSource.m in Sources */,
+				47EC256F1DAB30D1000731B5 /* NSDictionary+Additions.m in Sources */,
 				4758D4CC1DA32EF900D3946C /* RefreshFooter.m in Sources */,
 				4758D4B51DA20CEC00D3946C /* CustomCell.m in Sources */,
 				4758D4CF1DA344B500D3946C /* RefreshHeader.m in Sources */,
 				4758D4801DA2073D00D3946C /* main.m in Sources */,
+				47EC25691DAA5EFA000731B5 /* NSData+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
