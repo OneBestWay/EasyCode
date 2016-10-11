@@ -74,6 +74,7 @@
             break;
         }
         case LocateDetailAdddressFail: {
+            self.LocateStatusLabel.text = @"定位成功，获取详细地址失败";
              break;
         }
         default:

@@ -110,7 +110,7 @@
     [self.geocoder reverseGeocodeLocation:newLocation completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         __strong typeof(weakSelf) strongSelf = weakSelf;
 
-        if (error && [placemarks count] == 0) {
+        if (error || placemarks == nil || [placemarks count] == 0) {
             strongSelf.status = LocateDetailAdddressFail;
             [strongSelf locateFinished];
         }else {
