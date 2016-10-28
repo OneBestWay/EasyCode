@@ -12,6 +12,7 @@
 #import "TableViewModel.h"
 #import "RefreshFooter.h"
 #import "RefreshHeader.h"
+#import "ContactsPeople.h"
 
 @interface ViewController ()<ViewDataSourceDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -33,6 +34,9 @@
     [self setRefreshHeaderAndFooterView];
     
     [self.headerView beginRefreshing];
+    
+    NSArray *temp = [ContactsPeople allContactsPeople];
+    NSLog(@"%@",temp);
 }
 
 #pragma  mark --set  View

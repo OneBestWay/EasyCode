@@ -16,4 +16,6 @@
 @interface ViewDataSource : NSObject <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) NSMutableArray *dataSourceArray;
 @property (nonatomic,weak) id<ViewDataSourceDelegate> delegate;
+
+@property (nonatomic, strong) NSArray *keyArray;
 @end
