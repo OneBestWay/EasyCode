@@ -27,7 +27,7 @@ class ViewController: UIViewController,Dimmable {
         dim(.in,  alpha: dimLevel, speed: dimSpeed)
     }
     @IBAction func unwindFromSecondary(_ segue:UIStoryboardSegue) {
-        dim(.out,  speed: dimSpeed)
+       dim(.out,  speed: dimSpeed)
     }
 }
 

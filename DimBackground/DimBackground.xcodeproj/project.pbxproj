@@ -16,6 +16,14 @@
 		47309C621DCC6A030098B0CD /* DimBackgroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47309C611DCC6A030098B0CD /* DimBackgroundUITests.swift */; };
 		47309C701DCC6D420098B0CD /* DimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47309C6F1DCC6D420098B0CD /* DimViewController.swift */; };
 		47309C721DCC6F3F0098B0CD /* UIViewcontroller+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47309C711DCC6F3F0098B0CD /* UIViewcontroller+Extensions.swift */; };
+		47E7BB041E0236F5000A455E /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7BB031E0236F5000A455E /* NextViewController.swift */; };
+		47E7BB061E023776000A455E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7BB051E023776000A455E /* Animator.swift */; };
+		47E7BB081E0238AB000A455E /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7BB071E0238AB000A455E /* CustomSegue.swift */; };
+		47E7BB0A1E0275FA000A455E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7BB091E0275FA000A455E /* SecondViewController.swift */; };
+		47E7BB0C1E02766B000A455E /* PresentationCustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7BB0B1E02766B000A455E /* PresentationCustomSegue.swift */; };
+		47E7BB0E1E027716000A455E /* PresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7BB0D1E027716000A455E /* PresentationAnimator.swift */; };
+		47E7BB101E0277A4000A455E /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7BB0F1E0277A4000A455E /* DismissAnimator.swift */; };
+		47E7BB121E02782C000A455E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7BB111E02782C000A455E /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		47309C631DCC6A030098B0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47309C6F1DCC6D420098B0CD /* DimViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimViewController.swift; sourceTree = "<group>"; };
 		47309C711DCC6F3F0098B0CD /* UIViewcontroller+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewcontroller+Extensions.swift"; sourceTree = "<group>"; };
+		47E7BB031E0236F5000A455E /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		47E7BB051E023776000A455E /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		47E7BB071E0238AB000A455E /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
+		47E7BB091E0275FA000A455E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		47E7BB0B1E02766B000A455E /* PresentationCustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationCustomSegue.swift; sourceTree = "<group>"; };
+		47E7BB0D1E027716000A455E /* PresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationAnimator.swift; sourceTree = "<group>"; };
+		47E7BB0F1E0277A4000A455E /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
+		47E7BB111E02782C000A455E /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +125,14 @@
 				47309C481DCC6A030098B0CD /* Assets.xcassets */,
 				47309C4A1DCC6A030098B0CD /* LaunchScreen.storyboard */,
 				47309C4D1DCC6A030098B0CD /* Info.plist */,
+				47E7BB031E0236F5000A455E /* NextViewController.swift */,
+				47E7BB051E023776000A455E /* Animator.swift */,
+				47E7BB071E0238AB000A455E /* CustomSegue.swift */,
+				47E7BB111E02782C000A455E /* FirstViewController.swift */,
+				47E7BB091E0275FA000A455E /* SecondViewController.swift */,
+				47E7BB0B1E02766B000A455E /* PresentationCustomSegue.swift */,
+				47E7BB0F1E0277A4000A455E /* DismissAnimator.swift */,
+				47E7BB0D1E027716000A455E /* PresentationAnimator.swift */,
 			);
 			path = DimBackground;
 			sourceTree = "<group>";
@@ -268,8 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E7BB0A1E0275FA000A455E /* SecondViewController.swift in Sources */,
+				47E7BB061E023776000A455E /* Animator.swift in Sources */,
+				47E7BB0E1E027716000A455E /* PresentationAnimator.swift in Sources */,
+				47E7BB121E02782C000A455E /* FirstViewController.swift in Sources */,
+				47E7BB041E0236F5000A455E /* NextViewController.swift in Sources */,
 				47309C721DCC6F3F0098B0CD /* UIViewcontroller+Extensions.swift in Sources */,
+				47E7BB0C1E02766B000A455E /* PresentationCustomSegue.swift in Sources */,
+				47E7BB101E0277A4000A455E /* DismissAnimator.swift in Sources */,
 				47309C441DCC6A030098B0CD /* ViewController.swift in Sources */,
+				47E7BB081E0238AB000A455E /* CustomSegue.swift in Sources */,
 				47309C421DCC6A030098B0CD /* AppDelegate.swift in Sources */,
 				47309C701DCC6D420098B0CD /* DimViewController.swift in Sources */,
 			);
@@ -522,6 +554,7 @@
 				47309C681DCC6A030098B0CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47309C691DCC6A030098B0CD /* Build configuration list for PBXNativeTarget "DimBackgroundTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +563,7 @@
 				47309C6B1DCC6A030098B0CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47309C6C1DCC6A030098B0CD /* Build configuration list for PBXNativeTarget "DimBackgroundUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +572,7 @@
 				47309C6E1DCC6A030098B0CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
