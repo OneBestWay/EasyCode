@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import NetWork
 
 class NetWorkTests: XCTestCase {
     
@@ -21,16 +20,16 @@ class NetWorkTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testUserRequest() {
+        
+        LocalFileClient.default.send(UserRequest(name:"onevcat")) { [weak self] result in
+            switch result {
+            case .Success(let user):
+                
+                print("\(user.message),\(user.name)")
+            case .Failure(let error):
+                print("a error accure")
+            }
         }
     }
-    
 }

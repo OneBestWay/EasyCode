@@ -1,0 +1,185 @@
+{
+  "count": 18,
+  "list": [
+        {
+          "changeType": "0",
+          "patterns": "gap张江高科店",
+          "type": 1,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":2,
+          "paymentTips": "余额+余额宝",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "优衣库",
+          "type": 1,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":0,
+          "paymentTips": "余额+余额宝",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "gap张江高科店",
+          "type": 2,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":3,
+          "paymentTips": "尾号0789 储蓄卡",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "优衣库",
+          "type": 2,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":1,
+          "paymentTips": "我的现金余额",
+          "paymentCode": "E88888"
+        },
+       {
+          "changeType": "1",
+          "patterns": "gap张江高科店",
+          "type": 2,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":3,
+          "paymentTips": "尾号0789 储蓄卡",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "1",
+          "patterns": "优衣库",
+          "type": 2,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":1,
+          "paymentTips": "我的现金余额",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "gap张江高科店",
+          "type": 1,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":2,
+          "paymentTips": "余额+余额宝",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "优衣库",
+          "type": 1,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":0,
+          "paymentTips": "余额+余额宝",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "gap张江高科店",
+          "type": 2,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":3,
+          "paymentTips": "尾号0789 储蓄卡",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "优衣库",
+          "type": 2,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":1,
+          "paymentTips": "我的现金余额",
+          "paymentCode": "E88888"
+        },
+       {
+          "changeType": "1",
+          "patterns": "gap张江高科店",
+          "type": 2,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":3,
+          "paymentTips": "尾号0789 储蓄卡",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "1",
+          "patterns": "优衣库",
+          "type": 2,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":1,
+          "paymentTips": "我的现金余额",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "gap张江高科店",
+          "type": 1,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":2,
+          "paymentTips": "余额+余额宝",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "优衣库",
+          "type": 1,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":0,
+          "paymentTips": "余额+余额宝",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "gap张江高科店",
+          "type": 2,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":3,
+          "paymentTips": "尾号0789 储蓄卡",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "0",
+          "patterns": "优衣库",
+          "type": 2,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":1,
+          "paymentTips": "我的现金余额",
+          "paymentCode": "E88888"
+        },
+       {
+          "changeType": "1",
+          "patterns": "gap张江高科店",
+          "type": 2,
+          "dateString" : "20170322",
+          "amount": "200",
+          "paymentType":3,
+          "paymentTips": "尾号0789 储蓄卡",
+          "paymentCode": "E88888"
+        },
+        {
+          "changeType": "1",
+          "patterns": "优衣库",
+          "type": 2,
+          "dateString" : "20170325",
+          "amount": "200",
+          "paymentType":1,
+          "paymentTips": "我的现金余额",
+          "paymentCode": "E88888"
+        }
+   ]
+}

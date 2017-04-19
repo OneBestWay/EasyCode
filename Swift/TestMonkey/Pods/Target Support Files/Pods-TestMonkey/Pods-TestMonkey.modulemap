@@ -1,0 +1,6 @@
+framework module Pods_TestMonkey {
+  umbrella header "Pods-TestMonkey-umbrella.h"
+
+  export *
+  module * { export * }
+}

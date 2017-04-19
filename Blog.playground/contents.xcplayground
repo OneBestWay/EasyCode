@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='Performance'/>
+        <page name='Blog'/>
+        <page name='github'/>
+        <page name='ImageCompression'/>
+        <page name='Server'/>
+        <page name='Tips'/>
+        <page name='10.3'/>
+    </pages>
+</playground>

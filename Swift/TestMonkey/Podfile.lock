@@ -1,0 +1,15 @@
+PODS:
+  - SwiftMonkey (1.0.0)
+  - SwiftMonkeyPaws (1.0.0)
+
+DEPENDENCIES:
+  - SwiftMonkey (~> 1.0)
+  - SwiftMonkeyPaws (~> 1.0)
+
+SPEC CHECKSUMS:
+  SwiftMonkey: dc5681bf881dd84efcc7ff684a31582d5ac67232
+  SwiftMonkeyPaws: 172a5affbc3916a5be7d4462f7a943ea4fb0dffd
+
+PODFILE CHECKSUM: 12272a88018c39578a30602c7046e7eae6a25948
+
+COCOAPODS: 1.1.1
