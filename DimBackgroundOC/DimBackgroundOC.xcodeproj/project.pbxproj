@@ -17,6 +17,7 @@
 		47470B771DDBFCFE001DCDD3 /* DimBackgroundOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47470B761DDBFCFE001DCDD3 /* DimBackgroundOCUITests.m */; };
 		47470B861DDBFD4D001DCDD3 /* DimBankgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47470B851DDBFD4D001DCDD3 /* DimBankgroundViewController.m */; };
 		47470B891DDBFDC5001DCDD3 /* UIViewController+DimBankground.m in Sources */ = {isa = PBXBuildFile; fileRef = 47470B881DDBFDC5001DCDD3 /* UIViewController+DimBankground.m */; };
+		47C334991EAD917E0054CFAC /* DimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C334981EAD917E0054CFAC /* DimViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		47470B851DDBFD4D001DCDD3 /* DimBankgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DimBankgroundViewController.m; sourceTree = "<group>"; };
 		47470B871DDBFDC5001DCDD3 /* UIViewController+DimBankground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DimBankground.h"; sourceTree = "<group>"; };
 		47470B881DDBFDC5001DCDD3 /* UIViewController+DimBankground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DimBankground.m"; sourceTree = "<group>"; };
+		47C334971EAD917E0054CFAC /* DimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimViewController.h; sourceTree = "<group>"; };
+		47C334981EAD917E0054CFAC /* DimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DimViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				47470B871DDBFDC5001DCDD3 /* UIViewController+DimBankground.h */,
 				47470B881DDBFDC5001DCDD3 /* UIViewController+DimBankground.m */,
 				47470B5A1DDBFCFE001DCDD3 /* Main.storyboard */,
+				47C334971EAD917E0054CFAC /* DimViewController.h */,
+				47C334981EAD917E0054CFAC /* DimViewController.m */,
 				47470B5D1DDBFCFE001DCDD3 /* Assets.xcassets */,
 				47470B5F1DDBFCFE001DCDD3 /* LaunchScreen.storyboard */,
 				47470B621DDBFCFE001DCDD3 /* Info.plist */,
@@ -289,6 +294,7 @@
 				47470B861DDBFD4D001DCDD3 /* DimBankgroundViewController.m in Sources */,
 				47470B891DDBFDC5001DCDD3 /* UIViewController+DimBankground.m in Sources */,
 				47470B591DDBFCFE001DCDD3 /* ViewController.m in Sources */,
+				47C334991EAD917E0054CFAC /* DimViewController.m in Sources */,
 				47470B561DDBFCFE001DCDD3 /* AppDelegate.m in Sources */,
 				47470B531DDBFCFE001DCDD3 /* main.m in Sources */,
 			);
@@ -528,6 +534,7 @@
 				47470B7D1DDBFCFE001DCDD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47470B7E1DDBFCFE001DCDD3 /* Build configuration list for PBXNativeTarget "DimBackgroundOCTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +543,7 @@
 				47470B801DDBFCFE001DCDD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47470B811DDBFCFE001DCDD3 /* Build configuration list for PBXNativeTarget "DimBackgroundOCUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +552,7 @@
 				47470B831DDBFCFE001DCDD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

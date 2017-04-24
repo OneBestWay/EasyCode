@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIViewController+DimBankground.h"
 #import "DimBankgroundViewController.h"
+#import "DimViewController.h"
 
 @interface ViewController ()
 
@@ -30,6 +31,14 @@
     
     [self dim: kIn color:[UIColor blackColor] alpha:0.5 speed:0.5];
     [self presentViewController:dimVC animated:YES completion:nil];
+}
+- (IBAction)aletViewController:(UIButton *)sender {
+    DimViewController *dimVC = [[DimViewController alloc] init];
+    
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+        [self presentViewController:dimVC animated:YES completion:nil];
+    }
+    
 }
 
 
