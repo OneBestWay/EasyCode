@@ -13,7 +13,7 @@ class TableViewController: UITableViewController {
     var receiveText: String = "" {
         
         didSet {
-            self.title = receiveText
+            self.navigationItem.title = receiveText
         }
     }
     

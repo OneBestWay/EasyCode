@@ -14,6 +14,8 @@ class DimViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        modalPresentationStyle = .overFullScreen
+        
         popUpView.layer.cornerRadius = 10;
         popUpView.layer.borderColor = UIColor.black.cgColor
         popUpView.layer.borderWidth = 0.25

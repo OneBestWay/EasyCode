@@ -8,23 +8,41 @@
 
 import UIKit
 
+
 class NavigationViewController: UINavigationController {
 
     let landscapeViewControllers: [String] = ["LandscapeViewController"]
     let hideNavigationBarShadowImageViewController: [String] = ["PortraitExtendedViewController"]
-
+    
     let screenScale = UIScreen.main.scale
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.delegate = self
+        self.interactivePopGestureRecognizer?.delegate = self
+        
         self.view.backgroundColor = UIColor.white
-
+        
+        //navigationBar.setBackgroundImage(UIImage(), for: .default)
+        //navigationBar.shadowImage = UIImage()
+        //navigationBar.isTranslucent = true
+        
+        //navigationBar.tintColor = UIColor.red
+        //navigationBar.backgroundColor = UIColor.red
     }
 }
 
-
+extension NavigationViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        
+        if viewControllers.count <= 1{
+            return false
+        } else {
+            return true
+        }
+    }
+}
 extension NavigationViewController: UINavigationControllerDelegate {
     
     func navigationControllerSupportedInterfaceOrientations(_ navigationController: UINavigationController) -> UIInterfaceOrientationMask {
@@ -37,12 +55,8 @@ extension NavigationViewController: UINavigationControllerDelegate {
     
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         
-       
-    }
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        
         let viewControllerString = String(describing: type(of: viewController))
-
+        
         if hideNavigationBarShadowImageViewController.contains(viewControllerString) {
             // Translucency of the navigation bar is disabled so that it matches with
             // the non-translucent background of the extension view.
@@ -53,6 +67,11 @@ extension NavigationViewController: UINavigationControllerDelegate {
             // "Pixel" is a solid white 1x1 image.
             navigationController.navigationBar.setBackgroundImage(UIImage(named: "Pixel"), for: .default)
         }
+       
+    }
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        
+ 
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -62,12 +81,25 @@ extension NavigationViewController: UINavigationControllerDelegate {
         if self.viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
         }
-        
         super.pushViewController(viewController, animated: animated)
     }
     
+    override func popViewController(animated: Bool) -> UIViewController? {
+        
+       // let previousVC = self.viewControllers[self.viewControllers.count - 2]
+        
+       // if let currentVC = self.viewControllers.last {
+       //     if !currentVC.useTransparentNavigationBar && !previousVC.useTransparentNavigationBar {
+       //         shouldAddFakeNavigationBar = false
+       //     }else {
+       //         shouldAddFakeNavigationBar = true
+      //      }
+       // }else {
+        //    shouldAddFakeNavigationBar = true
+       // }
+        return super.popViewController(animated: animated)
+    }
 }
-
 extension NavigationViewController {
     
    
@@ -96,4 +128,18 @@ extension NavigationViewController {
         }
         return super.preferredStatusBarStyle
     }
+}
+
+extension NavigationViewController {
+    func transparentNavigationbar() {
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.isTranslucent = true
+        
+        self.navigationBar.tintColor = UIColor(red: (0/255.0), green: (0/255.0), blue: (0/255.0), alpha: 1.0)
+    }
+    
+    //self.navigationController?.navigationBar.barStyle = UINavigationBar.appearance().barStyle
+    //self.navigationController?.navigationBar.isTranslucent = true
+    //self.navigationController?.navigationBar.setBackgroundImage(UINavigationBar.appearance().backgroundImage(for: .default), for: .default)
 }
