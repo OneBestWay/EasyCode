@@ -8,5 +8,8 @@
         <page name='Server'/>
         <page name='Tips'/>
         <page name='10.3'/>
+        <page name='Network'/>
+        <page name='MachineThink'/>
+        <page name='Android'/>
     </pages>
 </playground>

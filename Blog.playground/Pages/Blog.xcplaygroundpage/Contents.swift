@@ -1,14 +1,25 @@
 /*: Blog
  
- 
+ # medium
+ * [open source -swift](https://medium.mybridge.co/39-open-source-swift-ui-libraries-for-ios-app-development-da1f8dc61a0f)
+ * [weheartswift](https://www.weheartswift.com/uiview-fundamentals/)
  # 必选
  * [pengguo](http://pengguo.xyz)
  * [freecode](https://freecodecamp.cn/)
+ * [indiestack](http://indiestack.com/2017/06/xcode-github-integration/)
+ * [xcode-server](http://shashikantjagtap.net/xcode9-xcode-server-comprehensive-ios-continuous-integration/)
+ * [texnotes](http://texnotes.me/guides/)
+ * [s](https://github.com/exacity/deeplearningbook-chinese)
+ * [swiftnews](http://swiftnews.curated.co/issues/48#sponsored)
+ # medium
+ * [2017-learning](https://medium.freecodecamp.org/what-to-learn-in-2017-if-youre-a-frontend-developer-b6cfef46effd)
  # 国内外博客
- 
+ * [macoscope](http://macoscope.com/blog/page/3/)
+ * [mikeAsh](https://www.mikeash.com/pyblog/)
  * [Blogs1](http://ios.jobbole.com/92672/)
  * [Blogs2](http://ios.jobbole.com/92675/)
  * [Markup](https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497)
+ * [WEB](https://imququ.com/)
  # 原理
  * [图片的解压缩](http://blog.leichunfeng.com/blog/2017/02/20/talking-about-the-decompression-of-the-image-in-ios/#jtss-tsina)
  * [ViewControllerLifeCycle](http://amztion.com/2016/12/03/uiviewcontroller-lifecycle/)
@@ -23,9 +34,10 @@
  * [算法](http://bigocheatsheet.com/)
 
  # 个人Blog
-
+ * [Tomasz Szulc](http://szulctomasz.com/)
  * [prototypr](https://blog.prototypr.io/)
  * [Use Your Loaf](https://useyourloaf.com/blog/batch-updating-of-constraints/)
+ * [kitchenstories](https://engineering.kitchenstories.io/this-simple-trick-will-change-how-you-think-about-table-views-706193654974)
  # 安全
  
  * [ios security](http://security.ios-wiki.com/)
@@ -59,7 +71,7 @@
  *  [interview](https://github.com/MaximAbramchuck/awesome-interview-questions#ios0)
  # 网站
  * [Bcode 资源网](http://www.bcoder.cn/)
- 
+ * [在线教育](https://www.class-central.com/)
  # 设计
  * [颜色](http://www.color-hex.com/)
  
@@ -82,4 +94,17 @@
  
  # 人工智能
  * [autodrow](https://www.autodraw.com/)
+ 
+ # 设计
+ * [iphone 屏幕适配](http://ios.jobbole.com/80730/)
+ # 网站
+ * [codeData](http://www.codedata.cn/hacknews/node2)
+ * [NGinx](https://www.nginx.com/blog/)
+ * [Python](https://blog.ansheng.me/article/python-full-stack-way/)
+ * [创造师](http://chuangzaoshi.com/friends)
+ * [友联](https://nanjishidu.me/2013/01/frend.html)
+ * [简页](http://jianpage.com/i/ixx)
+ * [简页V2EX](http://jianpage.com/i/v2ex)
+ * [软件会议直播](http://www.itdks.com/)
+ * [2017全球软件大会视频](http://www.itdks.com/dakashuo/playback/353)
 */
