@@ -23,16 +23,20 @@ extension Dimmable where Self: UIViewController {
         switch direction {
         case .in:
             //创建并添加一个dim view
-            let dimView = UIView(frame: view.frame);
+            guard let  navigationView = self.navigationController?.view else {
+                 return
+            }
+
+            let dimView = UIView(frame: navigationView.frame);
             dimView.backgroundColor = color;
             dimView.alpha = 0.0
-            view.addSubview(dimView)
+            navigationView.addSubview(dimView)
             
             //auto layout
             dimView.translatesAutoresizingMaskIntoConstraints = false
            
-            view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|[dimView]|", options: [], metrics: nil, views: ["dimView":dimView]))
-            view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[dimView]|", options: [], metrics: nil, views: ["dimView":dimView]))
+            navigationView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "|[dimView]|", options: [], metrics: nil, views: ["dimView":dimView]))
+            navigationView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[dimView]|", options: [], metrics: nil, views: ["dimView":dimView]))
             
             //animate alpha
             UIView.animate(withDuration: speed, animations: {
@@ -40,10 +44,14 @@ extension Dimmable where Self: UIViewController {
             })
             
         case .out:
+            
+            guard let  navigationView = self.navigationController?.view else {
+                return
+            }
             UIView.animate(withDuration: speed, animations: {
-                self.view.subviews.last?.alpha = alpha 
+                navigationView.subviews.last?.alpha = alpha
             }, completion: { (complete) in
-                self.view.subviews.last?.removeFromSuperview()
+                navigationView.subviews.last?.removeFromSuperview()
             })
           }
     }

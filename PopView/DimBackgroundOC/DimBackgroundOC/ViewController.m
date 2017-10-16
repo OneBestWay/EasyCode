@@ -27,7 +27,7 @@
     DimBankgroundViewController *dimVC = [[DimBankgroundViewController alloc] init];
     
     dimVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    dimVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    dimVC.modalPresentationStyle = UIModalPresentationOverFullScreen;
     
     [self dim: kIn color:[UIColor blackColor] alpha:0.5 speed:0.5];
     [self presentViewController:dimVC animated:YES completion:nil];

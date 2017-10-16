@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  DimBackground
+//  DimVCSwift
 //
-//  Created by GK on 2016/11/4.
-//  Copyright © 2016年 GK. All rights reserved.
+//  Created by GK on 2017/10/12.
+//  Copyright © 2017年 GK. All rights reserved.
 //
 
 import UIKit
@@ -15,8 +15,6 @@ class ViewController: UIViewController,Dimmable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.edgesForExtendedLayout = UIRectEdge.all;
-
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -24,12 +22,12 @@ class ViewController: UIViewController,Dimmable {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         dim(.in,  alpha: dimLevel, speed: dimSpeed)
     }
     @IBAction func unwindFromSecondary(_ segue:UIStoryboardSegue) {
-       dim(.out,  speed: dimSpeed)
+        dim(.out,  speed: dimSpeed)
     }
 }
 
